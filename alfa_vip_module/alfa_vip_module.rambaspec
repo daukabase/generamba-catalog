@@ -11,29 +11,29 @@ code_files:
 # Builder
 - {name: ModuleBuilder.swift, path: Code/module_builder.swift.liquid}
 
-# Interactor
-- {name: ModuleInteractor.swift, path: Code/interactor.swift.liquid}
-
-# Data Flow
-- {name: ModuleDataFlow.swift, path: Code/data_flow.swift.liquid}
-
-# Presenter
-- {name: ModulePresenter.swift, path: Code/presenter.swift.liquid}
-
-# View
-- {name: View/ModuleView.swift, path: Code/View/view.swift.liquid}
-
-# Controller
-- {name: Controller/ModuleViewController.swift, path: Code/Controller/view_controller.swift.liquid}
-- {name: Controller/Module+DisplayLogic.swift, path: Code/Controller/module_display_logic.liquid}
-- {name: Controller/Module+State.swift, path: Code/Controller/module_state.liquid}
-- {name: Controller/Module+View.swift, path: Code/Controller/module_view.liquid}
-
-# Provider
-- {name: Provider/ModuleDataStore.swift, path: Code/Provider/module_data_store.swift.liquid}
-- {name: Provider/ModuleEndpoint.swift, path: Code/Provider/module_endpoint.swift.liquid}
-- {name: Provider/ModuleProvider.swift, path: Code/Provider/module_provider.swift.liquid}
-- {name: Provider/ModuleService.swift, path: Code/Provider/module_service.swift.liquid}
+//# Interactor
+//- {name: ModuleInteractor.swift, path: Code/interactor.swift.liquid}
+//
+//# Data Flow
+//- {name: ModuleDataFlow.swift, path: Code/data_flow.swift.liquid}
+//
+//# Presenter
+//- {name: ModulePresenter.swift, path: Code/presenter.swift.liquid}
+//
+//# View
+//- {name: View/ModuleView.swift, path: Code/View/view.swift.liquid}
+//
+//# Controller
+//- {name: Controller/ModuleViewController.swift, path: Code/Controller/view_controller.swift.liquid}
+//- {name: Controller/Module+DisplayLogic.swift, path: Code/Controller/module_display_logic.liquid}
+//- {name: Controller/Module+State.swift, path: Code/Controller/module_state.liquid}
+//- {name: Controller/Module+View.swift, path: Code/Controller/module_view.liquid}
+//
+//# Provider
+//- {name: Provider/ModuleDataStore.swift, path: Code/Provider/module_data_store.swift.liquid}
+//- {name: Provider/ModuleEndpoint.swift, path: Code/Provider/module_endpoint.swift.liquid}
+//- {name: Provider/ModuleProvider.swift, path: Code/Provider/module_provider.swift.liquid}
+//- {name: Provider/ModuleService.swift, path: Code/Provider/module_service.swift.liquid}
 
 # The declarations for test files
 test_files:
