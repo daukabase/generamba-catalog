@@ -1,0 +1,30 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import PromiseKit
+
+protocol {{ module_info.name }}ServiceProtocol {
+    
+}
+
+final class {{ module_info.name }}Service {
+    
+    // MARK: - Properties
+    private let provider: Network<{{ module_info.name }}Endpoint>
+
+    // MARK: - Initialization
+    init(provider: Network<{{ module_info.name }}Endpoint>) {
+        self.provider = provider
+    }
+    
+}
+
+// MARK: - {{ module_info.name }}ServiceProtocol
+extension {{ module_info.name }}ListService: {{ module_info.name }}ServiceProtocol {
+    
+}

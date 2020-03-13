@@ -1,0 +1,29 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import PromiseKit
+
+protocol {{ module_info.name }}ProviderProtocol {
+    
+}
+
+final class {{ module_info.name }}Provider: {{ module_info.name }}ProviderProtocol {
+
+    // MARK: - Properties
+    private let dataStore: {{ module_info.name }}DataStore
+    private let service: {{ module_info.name }}ServiceProtocol
+
+    // MARK: - Initialization
+    init(dataStore: {{ module_info.name }}DataStore = {{ module_info.name }}DataStore(),
+         service: {{ module_info.name }}ServiceProtocol =
+             {{ module_info.name }}Service(provider: Network<{{ module_info.name }}Endpoint>.defaultNetwork)) {
+        self.dataStore = dataStore
+        self.service = service
+    }
+
+}

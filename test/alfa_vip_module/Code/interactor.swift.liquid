@@ -1,0 +1,28 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import PromiseKit
+
+protocol {{ module_info.name }}BusinessLogic {
+    
+}
+
+final class {{ {{ module_info.name }}_info.name }}Interactor: ModuleBusinessLogic {
+    
+    // MARK: - Properties
+    private let presenter: {{ module_info.name }}PresentationLogic
+    private let provider: {{ module_info.name }}ProviderProtocol
+
+    // MARK: - Initialization
+    init(presenter: {{ module_info.name }}PresentationLogic,
+         provider: {{ module_info.name }}ProviderProtocol = {{ module_info.name }}Provider()) {
+        self.presenter = presenter
+        self.provider = provider
+    }
+
+}

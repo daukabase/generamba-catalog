@@ -1,0 +1,38 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Moya
+
+enum {{ module_info.name }}Endpoint {
+    
+}
+
+extension {{ module_info.name }}Endpoint: SugarTargetType {
+    
+    // MARK: - SugarTargetType
+    var baseURL: URL {
+        fatalError("Url not specified")
+    }
+
+    var route: Route {
+        fatalError("Route not specified")
+    }
+    
+    var headers: [String: String]? {
+        return nil
+    }
+    
+    var parameters: Parameters? {
+        return nil
+    }
+
+    var sampleData: Data {
+        fatalError("Sample data not specified")
+    }
+    
+}
