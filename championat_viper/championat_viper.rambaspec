@@ -7,31 +7,33 @@ license: "MIT"
 
 # The declarations for code files
 code_files:
-# Assembly layer
-- {name: Assembly/Assembly.h, path: Code/Assembly/assembly.h.liquid}
-- {name: Assembly/Assembly.m, path: Code/Assembly/assembly.m.liquid}
+# Builder
+- {name: ModuleBuilder.swift, path: Code/module_builder.swift.liquid}
 
-# View layer
-- {name: View/ViewInput.h, path: Code/View/view_input.h.liquid}
-- {name: View/ViewOutput.h, path: Code/View/view_output.h.liquid}
-- {name: View/ViewController.h, path: Code/View/viewcontroller.h.liquid}
-- {name: View/ViewController.m, path: Code/View/viewcontroller.m.liquid}
+# Interactor
+- {name: ModuleInteractor.swift, path: Code/interactor.swift.liquid}
 
-# Presenter layer
-- {name: Presenter/ModuleInput.h, path: Code/Presenter/module_input.h.liquid}
-- {name: Presenter/Presenter.h, path: Code/Presenter/presenter.h.liquid}
-- {name: Presenter/Presenter.m, path: Code/Presenter/presenter.m.liquid}
+# Data Flow
+- {name: ModuleDataFlow.swift, path: Code/data_flow.swift.liquid}
 
-# Interactor layer
-- {name: Interactor/InteractorInput.h, path: Code/Interactor/interactor_input.h.liquid}
-- {name: Interactor/InteractorOutput.h, path: Code/Interactor/interactor_output.h.liquid}
-- {name: Interactor/Interactor.h, path: Code/Interactor/interactor.h.liquid}
-- {name: Interactor/Interactor.m, path: Code/Interactor/interactor.m.liquid}
+# Presenter
+- {name: ModulePresenter.swift, path: Code/presenter.swift.liquid}
 
-# Router layer
-- {name: Router/RouterInput.h, path: Code/Router/router_input.h.liquid}
-- {name: Router/Router.h, path: Code/Router/router.h.liquid}
-- {name: Router/Router.m, path: Code/Router/router.m.liquid}
+# View
+- {name: View/ModuleView.swift, path: Code/View/view.swift.liquid}
+
+# Controller
+- {name: Controller/ModuleViewController.swift, path: Code/Controller/view_controller.swift.liquid}
+- {name: Controller/Module+DisplayLogic.swift, path: Code/Controller/module_display_logic.liquid}
+- {name: Controller/Module+State.swift, path: Code/Controller/module_state.liquid}
+- {name: Controller/Module+View.swift, path: Code/Controller/module_view.liquid}
+
+# Provider
+- {name: Provider/ModuleDataStore.swift, path: Code/Provider/module_data_store.swift.liquid}
+- {name: Provider/ModuleEndpoint.swift, path: Code/Provider/module_endpoint.swift.liquid}
+- {name: Provider/ModuleProvider.swift, path: Code/Provider/module_provider.swift.liquid}
+- {name: Provider/ModuleService.swift, path: Code/Provider/module_service.swift.liquid}
+
 
 # The declarations for test files
 test_files:
